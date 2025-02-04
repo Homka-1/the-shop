@@ -3,6 +3,16 @@
     padding:0;
 }
 
+input[placeholder]{
+    font-family:"GTEestiPro", arial, sans-serif;
+}
+
+body{
+    font-family:math;
+}
+
+$orange: #ff4500;
+
 button{
     border: none;
 }
@@ -31,7 +41,7 @@ button{
 .header__search input{
     padding: 10px 500px 10px 10px;
     border-radius: 5px;
-    border-color: orangered;
+    border-color: $orange;
 }
 
 
@@ -41,11 +51,40 @@ button{
     height: 40px;
     width: 72px;
     border-radius: 5px;
-    background-color: orangered;
+    background-color: $orange;
     cursor: pointer;
 }
 
-$orange: #ff4500;
+.header__menu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    color: #111;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 10%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
 
 .header__menu__item{
     position: relative;
@@ -58,6 +97,10 @@ $orange: #ff4500;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.header__search button:hover{
+    background-color: darken($orange, 10%);
 }
 
 .header__menu__item:hover{
