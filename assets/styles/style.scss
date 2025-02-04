@@ -37,7 +37,7 @@ button{
 
 .header__search button{
     position: relative;
-    top: 5px;
+    top: 6px;
     height: 40px;
     width: 72px;
     border-radius: 5px;
@@ -45,19 +45,23 @@ button{
     cursor: pointer;
 }
 
-
+$orange: #ff4500;
 
 .header__menu__item{
     position: relative;
     top: 10px;
     width: 72px;
     height: 40px;
-    background-color: orangered;
+    background-color: $orange;
     border-radius: 5px;
     margin-left: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.header__menu__item:hover{
+    background-color: darken($orange, 10%);
 }
 
 .header__menu__item img{

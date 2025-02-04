@@ -36,7 +36,7 @@ button {
 
 .header__search button {
   position: relative;
-  top: 5px;
+  top: 6px;
   height: 40px;
   width: 72px;
   border-radius: 5px;
@@ -49,12 +49,16 @@ button {
   top: 10px;
   width: 72px;
   height: 40px;
-  background-color: orangered;
+  background-color: #ff4500;
   border-radius: 5px;
   margin-left: 10px;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.header__menu__item:hover {
+  background-color: #cc3700;
 }
 
 .header__menu__item img {
