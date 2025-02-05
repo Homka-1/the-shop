@@ -3,12 +3,8 @@
   padding: 0;
 }
 
-input[placeholder] {
-  font-family: "GTEestiPro", arial, sans-serif;
-}
-
 body {
-  font-family: math;
+  overflow-x: hidden;
 }
 
 button {
@@ -50,6 +46,7 @@ button {
   border-radius: 5px;
   background-color: #ff4500;
   cursor: pointer;
+  transition: background-color ease 250ms;
 }
 
 .header__menu {
@@ -95,6 +92,7 @@ button {
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: background-color ease 250ms;
 }
 
 .header__search button:hover {
@@ -108,4 +106,59 @@ button {
 .header__menu__item img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding: 6rem 3rem 3rem 3rem;
+}
+
+.slider__wrapper {
+  position: relative;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__nav {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.slider__nav a {
+  position: relative;
+  background-color: #fff;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider__nav a:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
