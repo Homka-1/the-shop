@@ -6,6 +6,9 @@
 body {
   overflow-x: hidden;
   height: 3000px;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
 }
 
 button {
