@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/login.css">
+    <link rel="stylesheet" href="../assets/styles/register.css">
     <title>Login</title>
 </head>
 <body>
@@ -23,18 +23,23 @@
         </div>
     </header>
     <main>
-        <form class="login__form">
+        <form class="register__form">
             <h1>SnapCart</h1>
-            <h3>Войдите в аккаунт</h3>
-            <label for="uname">Почта</label>
-            <input class="login__form__input" type="email" placeholder="Почта" required>
+            <h3>Регистрация</h3>
+            <label for="uname">Логин</label>
+            <input class="register__form__input" type="text" placeholder="Логин" required>
+
+            <label for="email">Почта</label>
+            <input class="register__form__input" type="email" placeholder="Почта" required>
 
             <label for="pwd">Пароль</label>
-            <input class="login__form__input" type="password" placeholder="Пароль" required>
-            <span>Запомнить пароль <input type="checkbox" name="rememberme"></span>
-            <span>Нет аккаунта? <a href="../register">Зарегистрироваться</a> </span>
+            <input class="register__form__input" type="password" placeholder="Пароль" required>
+
+            <label for="pwd">Повторите пароль</label>
+            <input class="register__form__input" type="password" placeholder="Пароль" required>
+
+            <span>Уже зарегистрированны? <a href="../login">Войти</a> </span>
             <button type="submit">Подтвердить</button>
-            <a class="forgotpwd" href="https://www.youtube.com/watch?v=xMHJGd3wwZk">Забыли пароль?</a>
         </form>
     </main>
 </body>

@@ -9,8 +9,8 @@ $white: #fff;
 
 body{
     overflow-x: hidden;
-    height: 3000px;
     user-select: text;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button{
@@ -33,9 +33,9 @@ button{
 }
 
 .header__search{
-    margin-left: 100px;
-    margin-top: 5px;
-    margin-right: 30px;
+    position: relative;
+    width: 600px;
+    margin: auto;
     display: flex;
     flex-direction: row;
 }
@@ -43,7 +43,7 @@ button{
 .header__search input{
     position: relative;
     padding-left: 10px;
-    width: 500px;
+    width: 80%;
     border-radius: 5px;
     border-color: $orange;
 }
@@ -119,5 +119,41 @@ button{
 .header__menu__item img{
     max-width: 100%;
     height: auto;
+}
+
+
+.register__form{
+    position: relative;
+    width: 20%;
+    display: flex;
+    background-color: darken(#F9F9F9, 2%);
+    top: 7rem;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 16px;
+    gap: 5px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.register__form button{
+    border-radius: 5px;
+    background-color: $orange;
+    cursor: pointer;
+    transition: background-color ease 250ms;
+    color: white;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.register__form button:hover{
+    background-color: darken($orange, 10%);
+}
+
+.register__form input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
 }
 
